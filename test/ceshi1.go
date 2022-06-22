@@ -34,7 +34,6 @@ func main() {
 	fmt.Println(10)
 	const (
 		a=iota
-		b
 		c="hello word"
 		d
 		e=iota
@@ -52,11 +51,6 @@ func main() {
 	}
 	//切片
 	nums1:=nums[4:5]
-	fmt.Println(nums1)
-	fmt.Println("切片长度",len(nums1))
-	fmt.Println("容量", cap(nums1))
-	fmt.Println(&nums[4])
-	fmt.Println(&nums1[0])
 	nums1[0]=1
 	fmt.Println(nums[4])
 	fmt.Println(&nums[3])

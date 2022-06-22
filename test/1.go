@@ -37,7 +37,7 @@ func main(){
 	primChain:=make(chan int ,2000)
 	go put(intChan)
 	for i:=0;i<4;i++{
-		go primNum(intChan,primChain,exitChain) //开四个协程，但是素数队列里的顺序肯定不是从大到小
+		go primNum(intChan,primChain,exitChain) //开四个协程，但是素数队列里的顺序肯定不是从小到大 
 	}
 	go func(){
 		for i:=0;i<4;i++{
